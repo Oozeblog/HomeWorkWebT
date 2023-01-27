@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(210, 209, 209);
+}
+
+h1 {
+    color: rgb(0, 42, 9);
+}
+
+h2 {
+    color: rgb(1, 72, 16);
+}
+
+h3 {
+    color: rgb(1, 104, 23);
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 20px;
+    color: #003c0d;
+}
+
+ul {
+    list-style: circle;
+}
