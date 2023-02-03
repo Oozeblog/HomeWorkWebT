@@ -25,17 +25,20 @@ $skills = [
 $experience = [
     [
         'name' => 'Мурополк',
-        'date' => 'Jan 2015 - настоящее время',
+        'dateStart' => 'Jan 2015',
+        'dateEnd' => 'настоящее время',
         'discription' => 'Мурчал на всю Ивановскую'
     ],
     [
         'name' => 'Шерстиком',
-        'date' => 'Mart 2012 - Dec 2014',
+        'dateStart' => 'Mart 2012',
+        'dateEnd' => 'Dec 2014',
         'discription' => 'Отрыгивал шерстяные комочки'
     ],
     [
         'name' => 'Вездессун',
-        'date' => 'Jan 2010 - Mart 2012',
+        'dateStart' => 'Jan 2010',
+        'dateEnd' => 'Mart 2012',
         'discription' => 'Ссал гостям в ботинки'
     ],
     
@@ -128,7 +131,13 @@ $experience = [
           <?php for ($i = 0; $i < count($experience); $i++):?>
           <div class="w3-container">
             <h5 class="w3-opacity"><b><?php echo $experience[$i]['name'];?></b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]['date'];?></h6>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]['dateStart'];?> - 
+            <?php if ($i == 0): ?>
+                <span class="w3-tag w3-teal w3-round"><?php echo $experience[$i]['dateEnd'];?></span>
+            <?php else: ?>
+                <?php echo $experience[$i]['dateEnd'];?>
+            <?php endif;?>
+            </h6>
             <p><?php echo $experience[$i]['discription'];?></p>
             <hr>
           </div>
