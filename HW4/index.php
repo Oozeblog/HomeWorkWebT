@@ -129,18 +129,18 @@ $experience = [
               class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
           
           <?php for ($i = 0; $i < count($experience); $i++):?>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b><?php echo $experience[$i]['name'];?></b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]['dateStart'];?> - 
-            <?php if ($i == 0): ?>
-                <span class="w3-tag w3-teal w3-round"><?php echo $experience[$i]['dateEnd'];?></span>
-            <?php else: ?>
-                <?php echo $experience[$i]['dateEnd'];?>
-            <?php endif;?>
-            </h6>
-            <p><?php echo $experience[$i]['discription'];?></p>
-            <hr>
-          </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b><?php echo $experience[$i]['name'];?></b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]['dateStart'];?> - 
+              <?php if ($i == 0): ?>
+                  <span class="w3-tag w3-teal w3-round"><?php echo $experience[$i]['dateEnd'];?></span>
+              <?php else: ?>
+                  <?php echo $experience[$i]['dateEnd'];?>
+              <?php endif;?>
+              </h6>
+              <p><?php echo $experience[$i]['discription'];?></p>
+              <hr>
+            </div>
           <?php endfor;?>
         </div>
  
