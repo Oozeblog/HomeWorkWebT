@@ -25,3 +25,7 @@ a {
 ul {
     list-style: circle;
 }
+
+img {
+    width: 550px;
+}
